@@ -154,15 +154,15 @@ namespace ConsoleApp1
                         Console.ReadKey();
                         break;
                     case "6":
-                        Console.WriteLine("Ingrese la temperatura en Celsios para convertirla a Farenheint");
+                        Console.WriteLine("Ingrese la temperatura en Celsios para convertirla a Fahrenheit");
                         int c6 = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("{0} Celsios son {1} Farenhiet", c6, C(c6));
+                        Console.WriteLine("{0} Celsios son {1} Fahrenheit", c6, C(c6));
                         Console.ReadKey();
                         break;
                     case "7":
-                        Console.WriteLine("Ingrese la temperatura en Farenheint para convertirla a Celsios");
+                        Console.WriteLine("Ingrese la temperatura en Fahrenheit para convertirla a Celsios");
                         int f6 = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("{0} Farenheint son {1} Celsios", f6, F(f6));
+                        Console.WriteLine("{0} Fahrenheit son {1} Celsios", f6, F(f6));
                         Console.ReadKey();
                         break;
                     case "8":
