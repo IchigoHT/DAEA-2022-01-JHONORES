@@ -23,5 +23,10 @@ namespace Lab02_01
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void mnuSisSalirSistem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
