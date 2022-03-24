@@ -50,18 +50,20 @@ namespace Lab02_01
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(39, 31);
+            this.panel1.Location = new System.Drawing.Point(52, 38);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(300, 300);
+            this.panel1.Size = new System.Drawing.Size(400, 369);
             this.panel1.TabIndex = 0;
             // 
             // btnCancelar
             // 
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(157, 204);
+            this.btnCancelar.Location = new System.Drawing.Point(209, 251);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(108, 33);
+            this.btnCancelar.Size = new System.Drawing.Size(144, 41);
             this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -73,9 +75,10 @@ namespace Lab02_01
             this.btnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciar.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnIniciar.Location = new System.Drawing.Point(43, 204);
+            this.btnIniciar.Location = new System.Drawing.Point(57, 251);
+            this.btnIniciar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(108, 33);
+            this.btnIniciar.Size = new System.Drawing.Size(144, 41);
             this.btnIniciar.TabIndex = 5;
             this.btnIniciar.Text = "Iniciar Sesión";
             this.btnIniciar.UseVisualStyleBackColor = false;
@@ -83,25 +86,28 @@ namespace Lab02_01
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(83, 164);
+            this.txtPassword.Location = new System.Drawing.Point(111, 202);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(141, 20);
+            this.txtPassword.Size = new System.Drawing.Size(187, 22);
             this.txtPassword.TabIndex = 4;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(83, 112);
+            this.txtUsuario.Location = new System.Drawing.Point(111, 138);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(141, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(187, 22);
             this.txtUsuario.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(80, 148);
+            this.label3.Location = new System.Drawing.Point(107, 182);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
+            this.label3.Size = new System.Drawing.Size(67, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Password";
             // 
@@ -109,9 +115,10 @@ namespace Lab02_01
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(79, 96);
+            this.label2.Location = new System.Drawing.Point(105, 118);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.Size = new System.Drawing.Size(56, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Usuario";
             // 
@@ -120,20 +127,23 @@ namespace Lab02_01
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label1.Location = new System.Drawing.Point(90, 36);
+            this.label1.Location = new System.Drawing.Point(104, 61);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 30);
+            this.label1.Size = new System.Drawing.Size(212, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "John Samuel";
+            this.label1.Text = "Eduardo Honores";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(384, 361);
+            this.ClientSize = new System.Drawing.Size(512, 444);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";
