@@ -89,8 +89,10 @@ namespace Lab02_01
             this.txtPassword.Location = new System.Drawing.Point(111, 202);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(187, 22);
             this.txtPassword.TabIndex = 4;
+            this.txtPassword.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtPassword_MaskInputRejected);
             // 
             // txtUsuario
             // 
@@ -127,12 +129,12 @@ namespace Lab02_01
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label1.Location = new System.Drawing.Point(104, 61);
+            this.label1.Location = new System.Drawing.Point(132, 68);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(212, 37);
+            this.label1.Size = new System.Drawing.Size(143, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Eduardo Honores";
+            this.label1.Text = "EduardoHT";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // frmLogin
