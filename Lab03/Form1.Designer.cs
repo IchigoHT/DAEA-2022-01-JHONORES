@@ -42,6 +42,7 @@ namespace Lab03
             this.btnEstado = new System.Windows.Forms.Button();
             this.btnDesconectar = new System.Windows.Forms.Button();
             this.btnPersona = new System.Windows.Forms.Button();
+            this.btnPerson = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -164,11 +165,22 @@ namespace Lab03
             this.btnPersona.UseVisualStyleBackColor = true;
             this.btnPersona.Click += new System.EventHandler(this.btnPersona_Click);
             // 
+            // btnPerson
+            // 
+            this.btnPerson.Location = new System.Drawing.Point(332, 271);
+            this.btnPerson.Name = "btnPerson";
+            this.btnPerson.Size = new System.Drawing.Size(97, 23);
+            this.btnPerson.TabIndex = 13;
+            this.btnPerson.Text = "Person";
+            this.btnPerson.UseVisualStyleBackColor = true;
+            this.btnPerson.Click += new System.EventHandler(this.btnPerson_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(514, 306);
+            this.Controls.Add(this.btnPerson);
             this.Controls.Add(this.btnPersona);
             this.Controls.Add(this.btnDesconectar);
             this.Controls.Add(this.btnEstado);
@@ -204,6 +216,7 @@ namespace Lab03
         private System.Windows.Forms.Button btnEstado;
         private System.Windows.Forms.Button btnDesconectar;
         private System.Windows.Forms.Button btnPersona;
+        private System.Windows.Forms.Button btnPerson;
     }
 }
 

@@ -128,6 +128,12 @@ namespace Lab03
             Persona persona = new Persona(conn);
             persona.Show();
         }
+
+        private void btnPerson_Click(object sender, EventArgs e)
+        {
+            Persona person = new Persona(conn);
+            person.Show();
+        }
     }
     }
 

@@ -37,7 +37,7 @@ namespace Lab03
 
                     if (conn.State == ConnectionState.Open)
                     {
-                        String sql = "SELECT * FROM tbl_usuario";
+                        String sql = "SELECT * FROM Person";
                         SqlCommand cmd = new SqlCommand(sql, conn);
                         SqlDataReader reader = cmd.ExecuteReader();
 
@@ -71,10 +71,20 @@ namespace Lab03
                 {
                     if (conn.State == ConnectionState.Open)
                     {
-                        String sql = "SELECT * FROM tbl_usuario WHERE usuario_nombre = '" + buscar + "'";
-                        SqlCommand cmd = new SqlCommand(sql, conn);
-                        SqlDataReader reader = cmd.ExecuteReader();
+                        String FirstName = txtNombre.Text;
 
+                        SqlCommand cmd = new SqlCommand();
+                        cmd.CommandText = "BuscarPersonaNombre";
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Connection = conn;
+
+                        SqlParameter param = new SqlParameter();
+                        param.ParameterName = "@FirstName";
+                        param.Value = FirstName;
+
+                        cmd.Parameters.Add(param);
+
+                        SqlDataReader reader = cmd.ExecuteReader();
                         DataTable dt = new DataTable();
                         dt.Load(reader);
                         dgvListado.DataSource = dt;
@@ -100,6 +110,9 @@ namespace Lab03
             }
         }
 
-     
+        private void Persona_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

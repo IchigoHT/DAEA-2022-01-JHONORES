@@ -32,7 +32,7 @@ namespace Lab03
         private void btnIniciar_Click(object sender, EventArgs e)
         {
             String servidor = "DESKTOP-9586QKG\\LOCAL";
-            String bd = "db_lab03";
+            String bd = "School";
             String user = txtUsuario.Text;
             String pws = txtPassword.Text;
 
@@ -50,12 +50,27 @@ namespace Lab03
                 {
                     if (conn.State == ConnectionState.Open)
                     {
-                        String sql = "SELECT * FROM tbl_usuario WHERE usuario_nombre = '" +
-                                        user + "' AND usuario_password = '" + pws + "'";
 
-                        SqlCommand cmd = new SqlCommand(sql, conn);
+                        SqlCommand cmd = new SqlCommand();
+                        cmd.CommandText = "ULogin";
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Connection = conn;
+
+                        SqlParameter paramU = new SqlParameter();
+                        paramU.ParameterName = "@usuario_nombre";
+                        paramU.Value = user;
+
+                        cmd.Parameters.Add(paramU);
+
+                        SqlParameter paramP = new SqlParameter();
+                        paramP.ParameterName = "@usuario_password";
+                        paramP.Value = pws;
+
+                        cmd.Parameters.Add(paramP);
+
+
+
                         SqlDataReader reader = cmd.ExecuteReader();
-
                         DataTable dt = new DataTable();
                         dt.Load(reader);
                         int Nusuario = dt.Rows.Count;

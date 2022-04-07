@@ -44,9 +44,8 @@ namespace Lab03
             this.dgvListado.Name = "dgvListado";
             this.dgvListado.RowHeadersWidth = 51;
             this.dgvListado.RowTemplate.Height = 24;
-            this.dgvListado.Size = new System.Drawing.Size(433, 387);
+            this.dgvListado.Size = new System.Drawing.Size(537, 408);
             this.dgvListado.TabIndex = 0;
-  
             // 
             // btnListar
             // 
@@ -60,9 +59,9 @@ namespace Lab03
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(380, 30);
+            this.btnBuscar.Location = new System.Drawing.Point(461, 30);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.Size = new System.Drawing.Size(98, 23);
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -76,7 +75,7 @@ namespace Lab03
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(161, 30);
+            this.txtNombre.Location = new System.Drawing.Point(242, 30);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(213, 22);
             this.txtNombre.TabIndex = 3;
@@ -85,13 +84,14 @@ namespace Lab03
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 473);
+            this.ClientSize = new System.Drawing.Size(571, 494);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.dgvListado);
             this.Name = "Persona";
             this.Text = "Persona";
+            this.Load += new System.EventHandler(this.Persona_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
