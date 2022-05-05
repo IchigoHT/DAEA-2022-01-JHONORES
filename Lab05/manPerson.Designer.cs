@@ -45,6 +45,7 @@ namespace Lab05
             this.txtHireDate = new System.Windows.Forms.DateTimePicker();
             this.dgvListado = new System.Windows.Forms.DataGridView();
             this.txtEnrollmentDate = new System.Windows.Forms.DateTimePicker();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,7 +96,7 @@ namespace Lab05
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(464, 46);
+            this.btnListar.Location = new System.Drawing.Point(385, 45);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(82, 28);
             this.btnListar.TabIndex = 5;
@@ -105,7 +106,7 @@ namespace Lab05
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(464, 80);
+            this.btnBuscar.Location = new System.Drawing.Point(385, 79);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(82, 28);
             this.btnBuscar.TabIndex = 6;
@@ -115,7 +116,7 @@ namespace Lab05
             // 
             // btnInsertar
             // 
-            this.btnInsertar.Location = new System.Drawing.Point(464, 114);
+            this.btnInsertar.Location = new System.Drawing.Point(385, 113);
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(82, 28);
             this.btnInsertar.TabIndex = 7;
@@ -125,7 +126,7 @@ namespace Lab05
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(464, 148);
+            this.btnModificar.Location = new System.Drawing.Point(385, 147);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(82, 28);
             this.btnModificar.TabIndex = 8;
@@ -135,7 +136,7 @@ namespace Lab05
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(464, 182);
+            this.btnEliminar.Location = new System.Drawing.Point(385, 181);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(82, 28);
             this.btnEliminar.TabIndex = 9;
@@ -169,6 +170,7 @@ namespace Lab05
             this.txtHireDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtHireDate.Location = new System.Drawing.Point(23, 183);
             this.txtHireDate.Name = "txtHireDate";
+            this.txtHireDate.ShowCheckBox = true;
             this.txtHireDate.Size = new System.Drawing.Size(141, 22);
             this.txtHireDate.TabIndex = 13;
             // 
@@ -191,14 +193,26 @@ namespace Lab05
             this.txtEnrollmentDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtEnrollmentDate.Location = new System.Drawing.Point(207, 183);
             this.txtEnrollmentDate.Name = "txtEnrollmentDate";
+            this.txtEnrollmentDate.ShowCheckBox = true;
             this.txtEnrollmentDate.Size = new System.Drawing.Size(141, 22);
             this.txtEnrollmentDate.TabIndex = 16;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(474, 45);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(82, 28);
+            this.btnLimpiar.TabIndex = 17;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // manPerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 560);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.txtEnrollmentDate);
             this.Controls.Add(this.dgvListado);
             this.Controls.Add(this.txtHireDate);
@@ -242,6 +256,7 @@ namespace Lab05
         private System.Windows.Forms.DateTimePicker txtHireDate;
         private System.Windows.Forms.DataGridView dgvListado;
         private System.Windows.Forms.DateTimePicker txtEnrollmentDate;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 
