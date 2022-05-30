@@ -185,21 +185,6 @@ namespace Laboratorio11
                 }
                 Console.ReadKey();
                 */
-                //Ejercicio 16
-                var orders = context.SalesOrderHeader;
-                var query = from order in orders
-                            group order by order.Contact.ContacID into g
-                            select new
-                            {
-                                Category = g.Key,
-                                maxTotalDue = g.Max(order => order.TotalDue)
-                            };
-                foreach (var order in query)
-                {
-                    Console.WriteLine("ContactID = {0} \t TotalDue Maximo = {1}",
-                        order.Category, order.maxTotalDue);
-                }
-                Console.ReadKey();
             }
 
         }
